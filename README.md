@@ -2,7 +2,7 @@
 
 ShopBridge is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Steps to run developement server
+## Steps to run development server
 
 ### 1. `npm i`
 
