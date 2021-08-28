@@ -11,71 +11,64 @@
       "id": 2,
       "name": "Shampoo",
       "description": "Hygiene Product",
-      "price": 1000,
+      "price": 300,
       "quantity": 10000
     },
     {
       "id": 3,
-      "name": "Item3",
-      "description": "Description3",
-      "price": 1000,
-      "quantity": 100
+      "name": "KitKat",
+      "description": "Food - Chocolate",
+      "price": 25,
+      "quantity": 380
     },
     {
       "id": 4,
-      "name": "Item4",
-      "description": "Description4",
-      "price": 1000,
-      "quantity": 100
+      "name": "Pizza Bread",
+      "description": "Food",
+      "price": 45,
+      "quantity": 80
     },
     {
       "id": 5,
-      "name": "Item5",
-      "description": "Description5",
-      "price": 1000,
-      "quantity": 100
+      "name": "Toothbrush",
+      "description": "Hygiene Product",
+      "price": 12,
+      "quantity": 120
     },
     {
       "id": 6,
-      "name": "Item6",
-      "description": "Description6",
-      "price": 1000,
+      "name": "Water Bottle",
+      "description": "Drink",
+      "price": 20,
       "quantity": 100
     },
     {
       "id": 7,
-      "name": "Item7",
-      "description": "Description7",
-      "price": 1000,
-      "quantity": 100
+      "name": "Wafers",
+      "description": "Food",
+      "price": 10,
+      "quantity": 300
     },
     {
       "id": 8,
-      "name": "Item8",
-      "description": "Description8",
-      "price": 1000,
+      "name": "Bread",
+      "description": "Food",
+      "price": 50,
       "quantity": 100
     },
     {
       "id": 9,
-      "name": "Item9",
-      "description": "Description9",
-      "price": 1000,
-      "quantity": 100
+      "name": "Socks",
+      "description": "Clothing",
+      "price": 200,
+      "quantity": 30
     },
     {
       "id": 10,
-      "name": "Item10",
-      "description": "Description10",
-      "price": 1000,
+      "name": "Caps",
+      "description": "Clothing",
+      "price": 150,
       "quantity": 100
-    },
-    {
-      "id": "222",
-      "name": "Soap",
-      "description": "",
-      "price": "",
-      "quantity": ""
     }
   ]
 }
