@@ -141,7 +141,12 @@ function Dashboard() {
       ></Modal>
 
       {showAlert && (
-        <Alert onClose={() => setShowAlert(false)} dismissible variant="danger">
+        <Alert
+          data-testid="alert"
+          onClose={() => setShowAlert(false)}
+          dismissible
+          variant="danger"
+        >
           {itemAddErrors
             ? itemAddResponse.toString()
             : "An Error Occurred! Sorry!"}
@@ -151,13 +156,14 @@ function Dashboard() {
       {(itemsResponse && !itemsErrors && (
         <>
           <Button
+            data-testid="addItemBtn"
             className="addBtn"
             variant="primary"
             onClick={() => handleShow("add", null)}
           >
             Add Item
           </Button>
-          <Table className="table" bordered hover>
+          <Table data-testid="itemsTable" className="table" bordered hover>
             <thead>
               <tr>
                 <th>Action</th>
@@ -174,12 +180,14 @@ function Dashboard() {
                   <td className="btnGrp">
                     <ButtonGroup>
                       <Button
+                        data-testid={"deleteBtn_" + item.id}
                         variant="danger"
                         onClick={() => handleDelete(item)}
                       >
                         Delete
                       </Button>
                       <Button
+                        data-testid={"updateBtn_" + item.id}
                         variant="warning"
                         onClick={() => handleShow("update", item)}
                       >
@@ -187,11 +195,13 @@ function Dashboard() {
                       </Button>
                     </ButtonGroup>
                   </td>
-                  <td>{item.id}</td>
-                  <td>{item.name}</td>
-                  <td>{item.description}</td>
-                  <td>{item.price && item.price + "₹"}</td>
-                  <td>{item.quantity}</td>
+                  <td data-testid={"id_" + item.id}>{item.id}</td>
+                  <td data-testid={"name_" + item.id}>{item.name}</td>
+                  <td data-testid={"desc_" + item.id}>{item.description}</td>
+                  <td data-testid={"price_" + item.id}>
+                    {item.price && item.price + "₹"}
+                  </td>
+                  <td data-testid={"quantity_" + item.id}>{item.quantity}</td>
                 </tr>
               ))}
             </tbody>

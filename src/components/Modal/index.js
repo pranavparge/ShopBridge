@@ -18,7 +18,7 @@ function AddUpdateModal({
   const [disabled, setDisabled] = useState(true);
 
   useEffect(() => {
-    if (itemToUpdate !== null) {
+    if (itemToUpdate && itemToUpdate !== null) {
       setItemID(itemToUpdate.id);
       setItemName(itemToUpdate.name);
       setItemDescription(itemToUpdate.description);
@@ -100,7 +100,7 @@ function AddUpdateModal({
           {(modalType === "update" && "Update Item") || "Add Item"}
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body data-testid="modal">
         <Alert variant="info">
           Mandatory fields are marked : <span style={{ color: "red" }}>*</span>
         </Alert>
@@ -120,6 +120,7 @@ function AddUpdateModal({
             <InputGroup className="mb-2">
               <InputGroup.Text>#</InputGroup.Text>
               <Form.Control
+                data-testid="itemID"
                 type="number"
                 placeholder="Enter item ID"
                 value={itemID}
@@ -139,6 +140,7 @@ function AddUpdateModal({
               Item Name<span style={{ color: "red" }}>*</span>
             </Form.Label>
             <Form.Control
+              data-testid="itemName"
               type="text"
               placeholder="Name"
               value={itemName}
@@ -149,6 +151,7 @@ function AddUpdateModal({
           <Form.Group className="mb-3" controlId="formBasicDescription">
             <Form.Label>Item Description</Form.Label>
             <Form.Control
+              data-testid="itemDesc"
               type="text"
               placeholder="Description"
               value={itemDescription}
@@ -162,6 +165,7 @@ function AddUpdateModal({
             <InputGroup className="mb-2">
               <InputGroup.Text>₹</InputGroup.Text>
               <Form.Control
+                data-testid="itemPrice"
                 type="number"
                 placeholder="Price"
                 value={itemPrice}
@@ -173,6 +177,7 @@ function AddUpdateModal({
           <Form.Group className="mb-3" controlId="formBasicQuanity">
             <Form.Label>Item Quantity</Form.Label>
             <Form.Control
+              data-testid="itemQuantity"
               type="number"
               placeholder="Quantity"
               value={itemQuantity}
@@ -183,6 +188,7 @@ function AddUpdateModal({
       </Modal.Body>
       <Modal.Footer>
         <Button
+          data-testid="cancelBtn"
           type="button"
           variant="secondary"
           onClick={() => {
@@ -193,6 +199,7 @@ function AddUpdateModal({
           Cancel
         </Button>
         <Button
+          data-testid="applyBtn"
           type="submit"
           variant="primary"
           disabled={disabled}

@@ -16,6 +16,7 @@ function App() {
         <Navbar bg="light" variant="light">
           <Container>
             <Link
+              data-testid="homeLink"
               to="/"
               className={
                 (location.pathname === "/" && "adminactive") || "adminLink"
@@ -26,6 +27,7 @@ function App() {
 
             <Nav className="me-auto">
               <Link
+                data-testid="adminLink"
                 to="/admin"
                 className={
                   (location.pathname === "/admin" && "adminactive") ||

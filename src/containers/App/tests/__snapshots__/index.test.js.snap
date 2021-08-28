@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`to check if it matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <header>
+      <nav
+        class="navbar navbar-expand navbar-light bg-light"
+      >
+        <div
+          class="container"
+        >
+          <a
+            class="adminactive"
+            data-testid="homeLink"
+            href="/"
+          >
+            ShopBridge
+          </a>
+          <div
+            class="me-auto navbar-nav"
+          >
+            <a
+              class="adminLink"
+              data-testid="adminLink"
+              href="/admin"
+            >
+              Admin
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div
+        class="banner"
+      >
+        <h1>
+          Welcome to 
+          <span
+            class="brand"
+          >
+            ShopBridge
+          </span>
+        </h1>
+      </div>
+    </main>
+  </div>
+</DocumentFragment>
+`;

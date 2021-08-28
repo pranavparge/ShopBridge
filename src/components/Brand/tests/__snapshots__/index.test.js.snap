@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`to check if it matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="banner"
+  >
+    <h1>
+      Welcome to 
+      <span
+        class="brand"
+      >
+        ShopBridge
+      </span>
+    </h1>
+  </div>
+</DocumentFragment>
+`;
