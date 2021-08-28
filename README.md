@@ -6,11 +6,11 @@ ShopBridge is bootstrapped with [Create React App](https://github.com/facebook/c
 
 ### 1. `npm i`
 
-To install all teh node_modules required
+To install all the node_modules required
 
 ### 2. `npm start`
 
-To start the developement server
+To start the development server
 
 ### 3. `./node_modules/.bin/json-server --port 3001 --watch db.json`
 
