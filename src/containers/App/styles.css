@@ -1,0 +1,23 @@
+main {
+  margin: 2em 1em 0em 1em;
+}
+
+.adminLink {
+  text-decoration: none;
+  color: unset;
+  font-size: large;
+  font-weight: 500;
+  padding: 1em;
+}
+
+.adminactive {
+  text-decoration: underline;
+  color: #0d6efd;
+  font-size: large;
+  font-weight: 500;
+  padding: 1em;
+}
+
+.adminLink:hover {
+  text-decoration: underline;
+}

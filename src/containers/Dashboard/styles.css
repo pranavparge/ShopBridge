@@ -1,0 +1,37 @@
+.table {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  .addBtn {
+    float: right;
+    margin-bottom: 1em;
+  }
+  .addBtnMobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .addBtn {
+    display: none;
+  }
+  .addBtnMobile {
+    width: 100%;
+  }
+}
+
+.spinner {
+  width: 4em;
+  height: 4em;
+}
+
+.loader {
+  margin-left: 50%;
+  margin-top: 10%;
+}
+
+.btnGrp {
+  width: 10%;
+}
