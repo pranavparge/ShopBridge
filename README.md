@@ -4,15 +4,15 @@ ShopBridge is bootstrapped with [Create React App](https://github.com/facebook/c
 
 ## Steps to run developement server
 
-### 1. npm i
+### 1. `npm i`
 
 To install all teh node_modules required
 
-### 2. npm start
+### 2. `npm start`
 
 To start the developement server
 
-### 3. ./node_modules/.bin/json-server --port 3001 --watch db.json
+### 3. `./node_modules/.bin/json-server --port 3001 --watch db.json`
 
 To start local json-server on port 3001
 
