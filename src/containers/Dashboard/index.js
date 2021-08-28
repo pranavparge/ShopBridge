@@ -190,7 +190,7 @@ function Dashboard() {
                   <td>{item.id}</td>
                   <td>{item.name}</td>
                   <td>{item.description}</td>
-                  <td>{item.price && item.price + "$"}</td>
+                  <td>{item.price && item.price + "₹"}</td>
                   <td>{item.quantity}</td>
                 </tr>
               ))}

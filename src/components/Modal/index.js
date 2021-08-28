@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Alert, Button, Form, Modal } from "react-bootstrap";
+import { Alert, Button, Form, InputGroup, Modal } from "react-bootstrap";
 
 function AddUpdateModal({
   show,
@@ -108,22 +108,27 @@ function AddUpdateModal({
         <Form>
           <Form.Group className="mb-3" controlId="formBasicID">
             {(modalType === "update" && (
-              <Form.Label>Item ID (Read-Only)</Form.Label>
+              <Form.Label>
+                Item ID<span style={{ color: "red" }}>*</span> (read-only)
+              </Form.Label>
             )) || (
               <Form.Label>
                 Item ID<span style={{ color: "red" }}>*</span>
               </Form.Label>
             )}
 
-            <Form.Control
-              type="number"
-              placeholder="Enter item ID"
-              value={itemID}
-              onChange={handleChange}
-              {...((modalType === "update" && { readOnly: true }) || {
-                readOnly: false,
-              })}
-            />
+            <InputGroup className="mb-2">
+              <InputGroup.Text>#</InputGroup.Text>
+              <Form.Control
+                type="number"
+                placeholder="Enter item ID"
+                value={itemID}
+                onChange={handleChange}
+                {...((modalType === "update" && { readOnly: true }) || {
+                  readOnly: false,
+                })}
+              />
+            </InputGroup>
             <Form.Text className="text-muted">
               Unique numerical identifier
             </Form.Text>
@@ -153,12 +158,16 @@ function AddUpdateModal({
 
           <Form.Group className="mb-3" controlId="formBasicPrice">
             <Form.Label>Item Price</Form.Label>
-            <Form.Control
-              type="number"
-              placeholder="Price"
-              value={itemPrice}
-              onChange={handleChange}
-            />
+
+            <InputGroup className="mb-2">
+              <InputGroup.Text>₹</InputGroup.Text>
+              <Form.Control
+                type="number"
+                placeholder="Price"
+                value={itemPrice}
+                onChange={handleChange}
+              />
+            </InputGroup>
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicQuanity">
