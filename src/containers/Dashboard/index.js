@@ -207,7 +207,11 @@ function Dashboard() {
             </tbody>
           </Table>
 
-          <Button className="addBtnMobile" variant="primary">
+          <Button
+            className="addBtnMobile"
+            variant="primary"
+            onClick={() => handleShow("add", null)}
+          >
             Add Item
           </Button>
         </>

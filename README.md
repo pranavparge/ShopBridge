@@ -15,7 +15,8 @@ To start local json-server on port 3001, which is used as a mock server.
 ### 3. `npm start`
 
 To start the development server, from here you can start surfing through the app.
-http://localhost:3000/
+
+`http://localhost:3000/`
 
 ### 4. `npm test -- --coverage`
 
