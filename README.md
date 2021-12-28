@@ -1,4 +1,4 @@
-# Getting Started with ShopBridge
+# Getting Started with ShopBridge App
 
 ShopBridge is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
